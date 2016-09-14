@@ -1,4 +1,4 @@
-# Rowshombo #
+# Roshambo #
 
 #### An application to play Rock, Paper, Scissors, September 14th, 2016
 

@@ -12,8 +12,18 @@
     }
 
     $app = new Silex\Application();
-    $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.pat' => __DIR__.'/../views'));
 
-    $app->get("/")
-    return
+    $app['debug'] = true;
+
+    $app->register(new Silex\Provider\TwigServiceProvider(), array('twig.pat' => __DIR__.'/../views'
+    ));
+
+    $app->get("/", function() use ($app) {
+        return $app['twig']->render('match.html.twig');
+    });
+
+    $app->get("/view_game", function() use($app) {
+        $input
+    })
+
 ?>
