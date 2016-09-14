@@ -58,5 +58,27 @@
             $this->assertEquals("Player 1 Wins the Freakin Match with a Paper Smother!!!", $result);
         }
 
+        function test_paper_vs_scissors()
+        {
+            $test_Game = new Game;
+            $first_input = "Paper";
+            $second_input = "Scissors";
+
+            $result = $test_Game->playgame($first_input, $second_input);
+
+            $this->assertEquals("Player 2 Wins the Freakin Match with a Scissor Slice!!!", $result);
+        }
+
+        function test_scissors_vs_paper()
+        {
+            $test_Game = new Game;
+            $first_input = "Scissors";
+            $second_input = "Paper";
+
+            $result = $test_Game->playgame($first_input, $second_input);
+
+            $this->assertEquals("Player 1 Wins the Freakin Match with a Scissor Slice!!!", $result);
+        }
+
     }
 ?>
