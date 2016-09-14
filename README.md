@@ -18,17 +18,25 @@ This application recreates the game Rock, Paper, Scissors. It allows two players
 
 ## Specifications ##
 
-* Display a draw if both players input the same choice.
+* Display a draw if both players pick the same choice.
     * input: player 1 - "rock", player 2 - "rock"
-    * output: draw
+    * output: It's a freakin draw!
 
-* Display which player won the match.
+* Display which player won the match if a player picks rock and the other player picks scissors.
     * input: player 1 - "rock", player 2 - "scissors"
-    * output: player 1
+    * output: player 1 won the match!
 
-* Display game winner after one player has won two matches.
-    * input: player 1 - "rock", player 2 - "scissors"; player 1 - "rock", player 2 - "scissors"; player 1 - "rock", player 2 - "scissors"
-    * output: player 1
+* Display which player won the match if a player picks rock and the other player picks paper.
+    * input: player 1 - "paper", player 2 - "rock"
+    * output: player 1 won the match!  
+
+* Display which player won the match if a player picks paper and the other player picks scissors.
+    * input: player 1 - "paper", player 2 - "scissors"
+    * output: player 2 won the match!       
+
+* Display game winner after a player has won two matches.
+    * input: player 1 - "rock", player 2 - "scissors"; player 1 - "rock", player 2 - "scissors"
+    * output: player 1 is the freakin winner of the whole game!
 
 ## Known Bugs ##
 

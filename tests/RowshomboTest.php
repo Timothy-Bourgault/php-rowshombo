@@ -5,16 +5,25 @@
     {
         function test_draw()
         {
-            // Arrange
             $test_Game = new Game;
-            $first_input = "rock";
-            $second_input = "rock";
+            $first_input = "Rock";
+            $second_input = "Rock";
 
-            // Act
             $result = $test_Game->playgame($first_input, $second_input);
 
-            // Assert
             $this->assertEquals("It's a DRAW!", $result);
         }
+
+        function test_rock_vs_scissors()
+        {
+            $test_Game = new Game;
+            $first_input = "Rock";
+            $second_input = "Scissors";
+
+            $result = $test_Game->playgame($first_input, $second_input);
+
+            $this->assertEquals("Player 1 Wins the freakin Match with a rock smash!!!", $result);
+        }
+
     }
 ?>
