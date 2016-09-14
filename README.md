@@ -18,13 +18,17 @@ This application recreates the game Rock, Paper, Scissors. It allows two players
 
 ## Specifications ##
 
-* Display which player won the game.
-    * input: player 1 - "rock", player 2 - "scissors"
-    * output: player 1
-
 * Display a draw if both players input the same choice.
     * input: player 1 - "rock", player 2 - "rock"
     * output: draw
+
+* Display which player won the match.
+    * input: player 1 - "rock", player 2 - "scissors"
+    * output: player 1
+
+* Display game winner after one player has won two matches.
+    * input: player 1 - "rock", player 2 - "scissors"; player 1 - "rock", player 2 - "scissors"; player 1 - "rock", player 2 - "scissors"
+    * output: player 1
 
 ## Known Bugs ##
 
