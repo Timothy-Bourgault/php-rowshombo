@@ -22,7 +22,7 @@
 
             $result = $test_Game->playgame($first_input, $second_input);
 
-            $this->assertEquals("Player 1 Wins the freakin Match with a rock smash!!!", $result);
+            $this->assertEquals("Player 1 Wins the Freakin Match with a Rock Smash!!!", $result);
         }
 
         function test_scissors_vs_rock()
@@ -33,7 +33,29 @@
 
             $result = $test_Game->playgame($first_input, $second_input);
 
-            $this->assertEquals("Player 2 Wins the freakin Match with a rock smash!!!", $result);
+            $this->assertEquals("Player 2 Wins the Freakin Match with a Rock Smash!!!", $result);
+        }
+
+        function test_rock_vs_paper()
+        {
+            $test_Game = new Game;
+            $first_input = "Rock";
+            $second_input = "Paper";
+
+            $result = $test_Game->playgame($first_input, $second_input);
+
+            $this->assertEquals("Player 2 Wins the Freakin Match with a Paper Smother!!!", $result);
+        }
+
+        function test_paper_vs_rock()
+        {
+            $test_Game = new Game;
+            $first_input = "Paper";
+            $second_input = "Rock";
+
+            $result = $test_Game->playgame($first_input, $second_input);
+
+            $this->assertEquals("Player 1 Wins the Freakin Match with a Paper Smother!!!", $result);
         }
 
     }
