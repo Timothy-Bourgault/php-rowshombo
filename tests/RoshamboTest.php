@@ -26,7 +26,7 @@
 
             $result = $test_Game->playgame($first_input, $second_input, $player1Win, $player2Win);
 
-            $this->assertEquals("Player 1 Wins the Freakin Match with a Rock Smash!!!", $result);
+            $this->assertEquals("Player 1 Wins the Freakin Match!!!", $result);
         }
 
         function test_scissors_vs_rock()
@@ -39,7 +39,7 @@
 
             $result = $test_Game->playgame($first_input, $second_input, $player1Win, $player2Win);
 
-            $this->assertEquals("Player 2 Wins the Freakin Match with a Rock Smash!!!", $result);
+            $this->assertEquals("Player 2 Wins the Freakin Match!!!", $result);
         }
 
         function test_rock_vs_paper()
@@ -52,7 +52,7 @@
 
             $result = $test_Game->playgame($first_input, $second_input, $player1Win, $player2Win);
 
-            $this->assertEquals("Player 2 Wins the Freakin Match with a Paper Smother!!!", $result);
+            $this->assertEquals("Player 2 Wins the Freakin Match!!!", $result);
         }
 
         function test_paper_vs_rock()
@@ -65,7 +65,7 @@
 
             $result = $test_Game->playgame($first_input, $second_input, $player1Win, $player2Win);
 
-            $this->assertEquals("Player 1 Wins the Freakin Match with a Paper Smother!!!", $result);
+            $this->assertEquals("Player 1 Wins the Freakin Match!!!", $result);
         }
 
         function test_paper_vs_scissors()
@@ -78,7 +78,7 @@
 
             $result = $test_Game->playgame($first_input, $second_input, $player1Win, $player2Win);
 
-            $this->assertEquals("Player 2 Wins the Freakin Match with a Scissor Slice!!!", $result);
+            $this->assertEquals("Player 2 Wins the Freakin Match!!!", $result);
         }
 
         function test_scissors_vs_paper()
@@ -91,7 +91,7 @@
 
             $result = $test_Game->playgame($first_input, $second_input, $player1Win, $player2Win);
 
-            $this->assertEquals("Player 1 Wins the Freakin Match with a Scissor Slice!!!", $result);
+            $this->assertEquals("Player 1 Wins the Freakin Match!!!", $result);
         }
 
         function test_game_win()
